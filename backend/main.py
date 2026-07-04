@@ -1,4 +1,5 @@
 import os
+import sys
 
 from dotenv import load_dotenv
 from fastapi import FastAPI
@@ -6,6 +7,10 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
 
 load_dotenv()
+
+# Vercel's Python runtime imports this file without adding its own directory
+# to sys.path, so the sibling `routers` package wouldn't otherwise be found.
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 from routers import chat, destinations, interview, news  # noqa: E402
 
