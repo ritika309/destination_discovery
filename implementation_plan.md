@@ -1,6 +1,6 @@
 # Hackathon Travel Discovery App - Implementation Plan
 
-We will build a cutesy, highly interactive application for travelers to discover destinations, uncover hidden gems, hear local stories, and connect with culture. It uses a FastAPI backend (Python) and a React frontend (Vite), styled with Vanilla CSS for a premium, cute aesthetic.
+We will build a highly interactive application for travelers to discover destinations, uncover hidden gems, hear local stories, and connect with culture. It uses a FastAPI backend (Python) and a React frontend (Vite), styled with Vanilla CSS for a premium, cute aesthetic.
 
 ## User Review Required
 
